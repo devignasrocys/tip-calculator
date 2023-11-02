@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/main.css">
+    <title>Tip calculator</title>
+</head>
+<body>
+    <img src="./assets/images/logo.svg" alt="" class="logo">
+    <div class="wrapper">
+        <div class="column">
+            <label for="bill">
+                Bill
+                <img class="icon" src="./assets/images/icon-dollar.svg" alt="">
+                <input id="bill" type="number" placeholder="0">
+            </label>
+            <div class="cell">
+                <p>Select tip %</p>
+                <ul class="tip-list" id="tip-list">
+                    <li class="5">5%</li>
+                    <li class="10">10%</li>
+                    <li class="15">15%</li>
+                    <li class="25">25%</li>
+                    <li class="50">50%</li>
+                    <li id="btn-custom" class="light-cyan">
+                        <input class="btn-custom" type="number" placeholder="Custom">
+                    </li>
+                </ul>
+            </div>
+            <label for="people-number">
+                Number of People
+                <img class="icon" src="./assets/images/icon-person.svg" alt="">
+                <input id="people-count" type="number" placeholder="0">
+            </label>
+        </div>
+        <div class="column">
+            <div class="row">
+                <div class="cell">
+                    <p class="white fs-16">Tip Amount</p>
+                    <p class="gray fs-18">/ person</p>
+                </div>
+                <div class="cell">
+                    <p id="tip-amount" class="strong-cyan fs-24">$0.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <p class="white fs-16">Total</p>
+                    <p class="gray fs-18">/ person</p>
+                </div>
+                <div class="cell">
+                    <p id="total-person" class="strong-cyan fs-24">$0.00</p>
+                </div>
+            </div>
+            <button class="btn" id="btn">RESET</button>
+        </div>
+    </div>
+    <script src="./src/main.js"></script>
+</body>
+</html>
